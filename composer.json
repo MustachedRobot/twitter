@@ -1,0 +1,10 @@
+{
+    "name": "mustached-robot/twitter",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Jérémie Pottier",
+            "email": "jeremie.pottier@gmail.com"
+        }
+    ]
+}
