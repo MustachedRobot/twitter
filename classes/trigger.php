@@ -35,8 +35,8 @@ class Trigger
                 try {
                     $twitter = new \Twitter(Plugin::getConfig('twitter', 'consumerKey.value'), Plugin::getConfig('twitter', 'consumerSecret.value'), Plugin::getConfig('twitter', 'accessToken.value'), Plugin::getConfig('twitter', 'accessTokenSecret.value'));
                     $twitter->send(__('twitter.tweet', array('firstname' => $user['firstname'], 'lastname' => $user['lastname'], 'pseudo' => $twitter_name, 'reason' => $reason))); 
-                } catch(Exception $e) {
-                                    
+                } catch(\Exception $e) {
+                    return $e->getMessage();
                 }
                 return true;
             } else {
