@@ -24,8 +24,6 @@ class Trigger
             $fields = $fieldset->validated();
             if ($fields['twitter']) {
 
-                include 'vendor/twitter-php/library/twitter.class.php';
-
                 $um = new \User\Manager;
                 $user = $um->get_user_from_email($fields['email']);
 
