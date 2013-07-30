@@ -1,5 +1,7 @@
 ## Twitter plugin for Mustached Robot
 
+This plugin sends a Tweet from the coworking space Twitter account when a coworker checks in (the coworker can uncheck the Tweet before he checks-in).
+
 ### Installation
 
 Add the plugin as a dependency in the composer.json of your installation
@@ -25,4 +27,4 @@ Run composer update:
 #### Configure Mustached Robot
 
 * Login to your Mustached Robot admin account, then go to Settings > Twitter
-* Enter the required informations (Consumer key, Consumer Secret, Accesse Token, Access token secret)
+* Enter the required informations (Consumer key, Consumer Secret, Access Token, Access token secret)
